@@ -1,0 +1,1 @@
+{"version":3,"file":"about.js","sources":["../src/js/about.js"],"sourcesContent":["console.log('Welcome to the School Project! About');\nimport '../scss/about.scss';\n"],"names":[],"mappings":"oDAAA,QAAQ,IAAI,sCAAsC"}

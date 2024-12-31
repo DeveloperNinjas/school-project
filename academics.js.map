@@ -1,0 +1,1 @@
+{"version":3,"file":"academics.js","sources":["../src/js/academics.js"],"sourcesContent":["console.log('Welcome to the School Project! Academics');\nimport '../scss/academics.scss';\n"],"names":[],"mappings":"oDAAA,QAAQ,IAAI,0CAA0C"}
