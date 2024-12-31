@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'fonts';
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+main {
+	overflow: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	display: inline-flex;
+	text-decoration: none;
+	color: #262626;
+}
+label,
+button {
+	cursor: pointer;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+section {
+	margin-bottom: 80px;
+
+	@media (min-width: $breakpoint-tablet) {
+		margin-bottom: 150px;
+	}
+
+	@media (min-width: $breakpoint-desktop) {
+		margin-bottom: 200px;
+	}
+}
+.container {
+	padding-inline: 16px;
+	margin-inline: auto;
+	@media (min-width: $breakpoint-tablet) {
+		padding-inline: 80px;
+	}
+
+	@media (min-width: $breakpoint-desktop) {
+		padding-inline: 162px;
+	}
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
