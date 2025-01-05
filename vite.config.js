@@ -8,7 +8,6 @@ export default defineConfig({
 	build: {
 		outDir: '../dist',
 		emptyOutDir: true,
-		sourcemap: true,
 		rollupOptions: {
 			input: glob.sync('./src/*.html'),
 			output: {
@@ -20,7 +19,15 @@ export default defineConfig({
 	css: {
 		devSourcemap: true,
 		preprocessorOptions: {
-			scss: {},
+			scss: {
+				additionalData: `
+				@use "/scss/variables.scss";
+				@use "/scss/utils.scss";
+				@use "/scss/helpers/functions.scss";
+				@use "/scss/helpers/media.scss";
+				@use "/scss/helpers/mixins.scss";
+				`,
+			},
 		},
 	},
 	plugins: [injectHTML(), FullReload(['./src/**/**.html'])],

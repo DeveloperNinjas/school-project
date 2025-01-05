@@ -1,13 +1,42 @@
-@function px-to-rem($px, $base: 16) {
-	@return $px / $base * 1rem;
+@use 'helpers' as *;
+:root {
+	--absolute-white: #fff;
+	--absolute-black: #000;
+
+	--orange-65: #ff8d4d;
+	--orange-70: #ff9e66;
+	--orange-75: #ffae80;
+	--orange-80: #ffbe99;
+	--orange-90: #ffdecc;
+	--orange-95: #ffefe5;
+	--orange-97: #fff5f0;
+	--orange-99: #fffcfa;
+
+	--grey-10: #1a1a1a;
+	--grey-15: #262626;
+	--grey-20: #333;
+	--grey-30: #4c4c4d;
+	--grey-35: #59595a;
+	--grey-40: #656567;
+	--grey-60: #98989a;
+	--grey-70: #b3b3b3;
+
+	--font-family: 'Outfit', sans-serif;
+	--second-family: 'Raleway', sans-serif;
+
+	--main-shadow: #{remm(6)} #{remm(6)} 0 #{remm(2)} #1e1e1e;
+	--button-shadow: #{remm(4)} #{remm(4)} 0 #{remm(2)} #1e1e1e;
+
+	--main-border: #{remm(2)} solid var(--grey-15);
+
+	--transition-duration: 0.2s;
+
+	--100vw: calc(100vw - var(--scrollbar-width));
+
+	--container-width: #{remm(1590)};
+	--container-padding-x: #{remm(16)};
+
+	@include tablet {
+		--container-width: #{remm(1280)};
+	}
 }
-
-$test-color: chartreuse;
-
-$breakpoint-mobile: 390px;
-$breakpoint-tablet: 1440px;
-$breakpoint-desktop: 1920px;
-$main-color: #fff5f0;
-$main-shadow: 6px 6px 0 2px #1e1e1e;
-$main-border: 2px solid #262626;
-$button-shadow: 4px 4px 0 2px #1e1e1e;
