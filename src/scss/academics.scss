@@ -1,11 +1,11 @@
 @use 'global';
 @use 'helpers' as *;
-@use './blocks/academics/header.scss';
-@use './blocks/academics/hero.scss';
-@use './blocks/academics/special.scss';
-@use './blocks/academics/learn.scss';
-@use './blocks/academics/gallery.scss';
-@use './blocks/academics/footer.scss';
+@use './blocks/academics/header';
+@use './blocks/academics/hero';
+@use './blocks/academics/special';
+@use './blocks/academics/learn';
+@use './blocks/academics/gallery';
+@use './blocks/academics/footer';
 
 h1 {
 	color: var(--orange-65);
@@ -15,4 +15,13 @@ h1 {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: remm(15);
+
+	@include tablet {
+		color: var(--orange-70);
+		gap: remm(20);
+	}
+	&__img {
+		width: remm(40);
+		height: remm(40);
+	}
 }

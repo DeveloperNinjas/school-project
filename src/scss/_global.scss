@@ -95,7 +95,7 @@ button {
 		color: var(--grey-10);
 	}
 
-	&[class] {
+	&[class][type] {
 		text-decoration: none;
 	}
 }
