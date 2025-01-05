@@ -1,1 +1,0 @@
-{"version":3,"file":"admission.js","sources":["../src/js/admission.js"],"sourcesContent":["console.log('Welcome to the School Project! Admission');\nimport '../scss/admission.scss';\n"],"names":[],"mappings":"oDAAA,QAAQ,IAAI,0CAA0C"}

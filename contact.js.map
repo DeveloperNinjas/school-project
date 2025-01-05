@@ -1,1 +1,0 @@
-{"version":3,"file":"contact.js","sources":["../src/js/contact.js"],"sourcesContent":["console.log('Welcome to the School Project! Contact');\nimport '../scss/contact.scss';\n"],"names":[],"mappings":"oDAAA,QAAQ,IAAI,wCAAwC"}

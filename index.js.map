@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sources":["../src/js/home.js"],"sourcesContent":["console.log('Welcome to the School Project! Home');\nimport '../scss/home.scss';\n"],"names":[],"mappings":"oDAAA,QAAQ,IAAI,qCAAqC"}
