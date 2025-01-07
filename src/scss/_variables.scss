@@ -24,10 +24,13 @@
 	--font-family: 'Outfit', sans-serif;
 	--second-family: 'Raleway', sans-serif;
 
-	--main-shadow: #{remm(6)} #{remm(6)} 0 #{remm(2)} #1e1e1e;
-	--button-shadow: #{remm(4)} #{remm(4)} 0 #{remm(2)} #1e1e1e;
+	--shadow-big-box: #{remm(8)} #{remm(8)} 0 #{remm(1)} var(--grey-10);
+	--shadow-main: #{remm(6)} #{remm(6)} 0 #{remm(2)} var(--grey-10);
+	--shadow-button: #{remm(4)} #{remm(4)} 0 #{remm(2)} var(--grey-10);
 
-	--main-border: #{remm(2)} solid var(--grey-15);
+	--border-gray-15: #{remm(2)} solid var(--grey-15);
+	--border-gray-20: #{remm(2)} solid var(--grey-20);
+	--border-black: #{remm(2)} solid var(--absolute-black);
 
 	--transition-duration: 0.2s;
 

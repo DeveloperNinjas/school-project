@@ -23,12 +23,12 @@
 
 .visible-tablet {
 	@include tablet {
-		display: block !important;
+		display: block;
 	}
 }
 .visible-desktop {
 	@include desktop {
-		display: block !important;
+		display: block;
 	}
 }
 
@@ -38,13 +38,5 @@ a {
 	color: var(--grey-15);
 }
 section {
-	margin-bottom: remm(80);
-
-	@include tablet {
-		margin-bottom: remm(150);
-	}
-
-	@include desktop {
-		margin-bottom: remm(200);
-	}
+	margin-bottom: fluid(200, 80);
 }

@@ -100,8 +100,18 @@ button {
 	}
 }
 
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
 :focus-visible {
-	outline: remm(2) dashed var(--color-light);
+	outline: remm(2) dashed var(--grey-30);
 	outline-offset: remm(4);
 	transition-duration: 0s !important;
 }
