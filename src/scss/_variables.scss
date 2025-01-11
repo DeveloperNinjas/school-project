@@ -39,7 +39,7 @@
 	--container-width: #{remm(1590)};
 	--container-padding-x: #{remm(16)};
 
-	@include tablet {
+	@include laptop {
 		--container-width: #{remm(1280)};
 	}
 }

@@ -10,8 +10,23 @@
 	@include visually-hidden;
 }
 
+.hidden-mobile {
+	@include mobile {
+		display: none !important;
+	}
+}
+.hidden-mobile-l {
+	@include mobile-l {
+		display: none !important;
+	}
+}
 .hidden-tablet {
 	@include tablet {
+		display: none !important;
+	}
+}
+.hidden-laptop {
+	@include laptop {
 		display: none !important;
 	}
 }
@@ -20,18 +35,26 @@
 		display: none !important;
 	}
 }
-
+.visible-mobile {
+	@include mobile-above {
+		display: none !important;
+	}
+}
+.visible-mobile-l {
+	@include mobile-above-l {
+		display: none !important;
+	}
+}
 .visible-tablet {
-	@include tablet {
-		display: block;
+	@include tablet-above {
+		display: none !important;
 	}
 }
-.visible-desktop {
-	@include desktop {
-		display: block;
+.visible-laptop {
+	@include laptop-above {
+		display: none !important;
 	}
 }
-
 a {
 	display: inline-flex;
 	text-decoration: none;
