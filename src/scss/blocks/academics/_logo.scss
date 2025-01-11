@@ -1,21 +1,7 @@
+@use '../../helpers' as *;
+
 .logo {
-	color: black;
-
-	&.__yellow {
-		color: yellow;
-		font-size: 23px;
-	}
-	&.__green @include mobile {
-		padding: 20 20 20 20;
-	}
-}
-
-.wraper {
-	&__item {
-		gap: 20px;
-		color: green;
-		&-red {
-			color: red;
-		}
+	&__image {
+		max-width: fluid(183, 137);
 	}
 }

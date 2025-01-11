@@ -1,1 +1,55 @@
 @use '../../helpers' as *;
+
+.header {
+	&__study {
+		text-align: center;
+		background-color: var(--orange-90);
+		@include fluid-text(20, 14);
+		padding-block: remm(12);
+		border: var(--border-gray-15);
+		border-radius: remm(6);
+		margin-bottom: remm(14);
+	}
+
+	&__body {
+		&-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: var(--absolute-white);
+			border: var(--border-gray-15);
+			border-radius: 12px;
+		}
+	}
+
+	&__logo {
+		align-items: center;
+		background: var(--orange-65);
+		padding: remm(16) remm(20);
+		@include desktop {
+			padding: remm(20) remm(24);
+		}
+		border-right: var(--border-gray-15);
+		border-radius: 10px 0 0 10px;
+	}
+
+	&__overlay {
+		@include mobile-l {
+			display: none;
+		}
+		&.is-active {
+			@include hide;
+			translate: 100%;
+		}
+	}
+
+	&__burger-button {
+		display: flex;
+		align-items: center;
+		align-self: stretch;
+		padding: remm(16) remm(30);
+		border-left: var(--border-gray-15);
+		background: var(--orange-95);
+		border-radius: 0 10px 10px 0;
+	}
+}

@@ -1,0 +1,29 @@
+@use '../../helpers' as *;
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	column-gap: remm(14);
+
+	&::after {
+		--size: #{remm(20)};
+		@include mobile-above {
+			--size: #{remm(24)};
+		}
+		@include desktop {
+			--size: #{remm(30)};
+		}
+		@include square(var(--size));
+
+		content: '';
+		flex-shrink: 0;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	&--arrow-right {
+		&::after {
+			background-image: url('../../../images/academics/svg/icon-black-arrow-right.svg');
+		}
+	}
+}
