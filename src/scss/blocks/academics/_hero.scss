@@ -1,1 +1,7 @@
 @use '../../helpers' as *;
+.main {
+	margin-top: remm(175);
+	@include desktop {
+		margin-top: remm(195);
+	}
+}

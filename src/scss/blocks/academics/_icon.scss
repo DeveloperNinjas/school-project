@@ -26,4 +26,104 @@
 			background-image: url('../../../images/academics/svg/icon-black-arrow-right.svg');
 		}
 	}
+
+	&--svg-header {
+		position: absolute;
+		transition: transform 1s ease-out, opacity 1s ease-out;
+		opacity: 0;
+
+		&.svg-one {
+			width: fluid(224, 50);
+			top: 50%;
+			left: -3%;
+			transform: translateY(-50%);
+			@include mobile-above-l {
+				top: 10%;
+				left: -3%;
+			}
+			@include tablet-above {
+				top: -20%;
+				left: -3%;
+			}
+			@include laptop-above {
+				top: -55%;
+				left: -3%;
+			}
+		}
+
+		&.svg-two {
+			width: fluid(73, 33);
+			top: -25%;
+			left: 5%;
+			transform: translateX(-50%);
+			@include mobile-above-l {
+				top: -45%;
+				left: 15%;
+			}
+			@include tablet-above {
+				top: -45%;
+				left: 15%;
+			}
+			@include laptop-above {
+				top: -75%;
+				left: 20%;
+			}
+		}
+
+		&.svg-three {
+			bottom: -70%;
+			left: 98%;
+			transform: translateX(-50%);
+			@include mobile-above-l {
+				bottom: -70%;
+				left: 85%;
+			}
+			@include tablet-above {
+				bottom: -60%;
+				left: 85%;
+			}
+			@include laptop-above {
+				bottom: -50%;
+				left: 80%;
+			}
+		}
+
+		&.svg-four {
+			width: fluid(224, 50);
+			top: 50%;
+			right: -3%;
+			transform: translateY(-50%);
+			@include mobile-above-l {
+				top: 10%;
+				right: -3%;
+			}
+			@include tablet-above {
+				top: -6%;
+				right: -3%;
+			}
+			@include laptop-above {
+				top: -30%;
+				right: -3%;
+			}
+		}
+
+		&.animate {
+			opacity: 1;
+			&.svg-one {
+				transform: translateY(-50%) translateX(10%);
+			}
+
+			&.svg-two {
+				transform: translateX(-50%) translateY(10%);
+			}
+
+			&.svg-three {
+				transform: translateX(-50%) translateY(-10%);
+			}
+
+			&.svg-four {
+				transform: translateY(-50%) translateX(-10%);
+			}
+		}
+	}
 }

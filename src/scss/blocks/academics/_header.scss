@@ -1,6 +1,11 @@
 @use '../../helpers' as *;
 
 .header {
+	position: fixed;
+	width: 100%;
+	background-color: var(--orange-97);
+	padding-top: remm(15);
+
 	&__study {
 		text-align: center;
 		background-color: var(--orange-90);
@@ -9,6 +14,9 @@
 		border: var(--border-gray-15);
 		border-radius: remm(6);
 		margin-bottom: remm(14);
+		margin-inline: remm(10);
+		position: relative;
+		overflow: hidden;
 	}
 
 	&__body {
@@ -18,38 +26,66 @@
 			align-items: center;
 			background-color: var(--absolute-white);
 			border: var(--border-gray-15);
-			border-radius: 12px;
+			border-radius: remm(12);
+			box-shadow: 0 0 1rem 0 var(--grey-15);
 		}
-	}
-
-	&__logo {
-		align-items: center;
-		background: var(--orange-65);
-		padding: remm(16) remm(20);
-		@include desktop {
-			padding: remm(20) remm(24);
-		}
-		border-right: var(--border-gray-15);
-		border-radius: 10px 0 0 10px;
 	}
 
 	&__overlay {
-		@include mobile-l {
+		overflow-y: auto;
+		@include tablet {
 			display: none;
 		}
-		&.is-active {
-			@include hide;
-			translate: 100%;
+
+		@include tablet {
+			position: fixed;
+			inset: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 3rem;
+			padding: 1rem;
+			background-color: var(--orange-95);
+			transition-duration: var(--transition-duration);
+
+			&:not(.is-active) {
+				@include hide;
+
+				translate: 100%;
+			}
 		}
 	}
 
-	&__burger-button {
-		display: flex;
-		align-items: center;
-		align-self: stretch;
-		padding: remm(16) remm(30);
-		border-left: var(--border-gray-15);
-		background: var(--orange-95);
-		border-radius: 0 10px 10px 0;
+	&__menu {
+		&-list {
+			display: flex;
+			flex-direction: column;
+			row-gap: remm(5);
+			font-size: remm(30);
+			align-items: center;
+			@include tablet-above {
+				display: flex;
+				flex-direction: row;
+				font-size: remm(16);
+				color: var(--grey-15);
+			}
+			@include desktop {
+				font-size: remm(20);
+			}
+		}
+		&-item {
+			@include tablet-above {
+				padding: fluid(25.5, 22) fluid(34, 30);
+				border-left: var(--border-gray-15);
+				&:last-child {
+					background-color: var(--orange-65);
+					border-radius: 0 remm(10) remm(10) 0;
+				}
+				&.is-active {
+					background-color: var(--orange-95);
+				}
+			}
+		}
 	}
 }
