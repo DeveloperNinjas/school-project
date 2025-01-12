@@ -3,18 +3,25 @@
 .header {
 	position: fixed;
 	width: 100%;
-	background-color: var(--orange-97);
 	padding-top: remm(15);
+	z-index: 2;
+	padding-inline: remm(10);
+	@include laptop-above {
+		padding-inline: remm(50);
+	}
+	&.hidden {
+		margin-top: remm(-82);
+	}
 
 	&__study {
 		text-align: center;
 		background-color: var(--orange-90);
+
 		@include fluid-text(20, 14);
 		padding-block: remm(12);
 		border: var(--border-gray-15);
 		border-radius: remm(6);
 		margin-bottom: remm(14);
-		margin-inline: remm(10);
 		position: relative;
 		overflow: hidden;
 	}
@@ -32,11 +39,6 @@
 	}
 
 	&__overlay {
-		overflow-y: auto;
-		@include tablet {
-			display: none;
-		}
-
 		@include tablet {
 			position: fixed;
 			inset: 0;
@@ -51,7 +53,6 @@
 
 			&:not(.is-active) {
 				@include hide;
-
 				translate: 100%;
 			}
 		}
@@ -76,7 +77,7 @@
 		}
 		&-item {
 			@include tablet-above {
-				padding: fluid(25.5, 22) fluid(34, 30);
+				padding: fluid(25.5, 21) fluid(34, 28);
 				border-left: var(--border-gray-15);
 				&:last-child {
 					background-color: var(--orange-65);
@@ -86,6 +87,9 @@
 					background-color: var(--orange-95);
 				}
 			}
+		}
+		&-link {
+			white-space: nowrap;
 		}
 	}
 }

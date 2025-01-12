@@ -1,0 +1,8 @@
+@use '../../helpers' as *;
+
+.key {
+	padding: remm(8) remm(16);
+	border-radius: remm(6);
+	border: var(--border-gray-15);
+	background-color: var(--absolute-white);
+}

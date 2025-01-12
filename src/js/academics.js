@@ -49,3 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		svg.classList.add('animate');
 	});
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+	const header = document.querySelector('.header');
+	let lastScrollY = window.scrollY;
+
+	window.addEventListener('scroll', () => {
+		const currentScrollY = window.scrollY;
+
+		if (currentScrollY > lastScrollY && currentScrollY > 50) {
+			header.classList.add('hidden');
+		} else if (currentScrollY === 0) {
+			header.classList.remove('hidden');
+		}
+
+		lastScrollY = currentScrollY;
+	});
+});
