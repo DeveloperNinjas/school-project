@@ -2,8 +2,12 @@
 
 .header {
 	position: fixed;
+	max-width: 2200px;
 	width: 100%;
 	padding-top: remm(15);
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 	z-index: 2;
 	padding-inline: remm(10);
 	@include laptop-above {

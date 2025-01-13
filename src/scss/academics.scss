@@ -1,14 +1,15 @@
 @use 'global';
 @use 'helpers' as *;
 
+@use 'blocks/academics/icon';
+@use 'blocks/academics/burger-button';
+@use 'blocks/academics/logo';
+@use 'blocks/academics/key';
+@use 'blocks/academics/bordered-shadow-box';
+
 @use 'blocks/academics/header';
 @use 'blocks/academics/hero';
 @use 'blocks/academics/special';
 @use 'blocks/academics/learn';
 @use 'blocks/academics/gallery';
 @use 'blocks/academics/footer';
-
-@use 'blocks/academics/icon';
-@use 'blocks/academics/burger-button';
-@use 'blocks/academics/logo';
-@use 'blocks/academics/key';

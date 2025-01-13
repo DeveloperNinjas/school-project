@@ -19,15 +19,8 @@
 .hero {
 	display: flex;
 	padding: fluid(150, 50) fluid(120, 30);
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	gap: remm(20);
-	border-radius: remm(10);
-	border: var(--border-gray-15);
-	background-color: var(--absolute-white);
 	box-shadow: var(--shadow-main-etc);
-	position: relative;
 
 	@include tablet-above {
 		display: grid;
@@ -62,6 +55,10 @@
 		@include tablet-above {
 			align-items: start;
 		}
+	}
+
+	&__key {
+		margin: 0;
 	}
 
 	&__title {
