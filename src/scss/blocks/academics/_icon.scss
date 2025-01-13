@@ -21,10 +21,24 @@
 			background-position: center;
 			background-size: contain;
 			background-repeat: no-repeat;
-			background-image: url('../../../images/academics/svg/icon-black-arrow-right.svg');
+			background-image: url('../../../images/academics/svg/icon-black-arrow-right-big.svg');
 		}
 	}
 
+	&--learn-bg {
+		background-position: top center;
+		background-size: remm(93) remm(237);
+		background-repeat: no-repeat;
+		background-image: url(../../../images/academics/pic/learn/learn-bg-obj.svg);
+
+		@include laptop-above {
+			background-size: remm(103) remm(282);
+		}
+
+		@include desktop {
+			background-size: remm(125) remm(384);
+		}
+	}
 	&--svg {
 		&-header {
 			position: absolute;

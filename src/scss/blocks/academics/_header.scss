@@ -10,6 +10,7 @@
 	right: 0;
 	z-index: 2;
 	padding-inline: remm(10);
+
 	@include laptop-above {
 		padding-inline: remm(50);
 	}
@@ -69,6 +70,7 @@
 			row-gap: remm(5);
 			font-size: remm(30);
 			align-items: center;
+
 			@include tablet-above {
 				display: flex;
 				flex-direction: row;

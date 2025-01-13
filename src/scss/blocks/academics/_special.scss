@@ -1,16 +1,6 @@
 @use '../../helpers' as *;
 
 .special {
-	&__inner {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		gap: fluid(19, 10);
-		margin-bottom: remm(50);
-	}
-
 	&__list {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -18,6 +8,10 @@
 		align-items: center;
 		row-gap: fluid(85, 68);
 		column-gap: remm(40);
+
+		@include mobile-above-l {
+			grid-template-columns: repeat(2, 1fr);
+		}
 
 		@include tablet-above {
 			grid-template-columns: repeat(3, 1fr);
