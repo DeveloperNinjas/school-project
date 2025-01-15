@@ -1,8 +1,8 @@
 @use '../../helpers' as *;
 .main {
-	margin-top: remm(175);
+	margin-top: remm(200);
 	@include desktop {
-		margin-top: remm(195);
+		margin-top: remm(230);
 	}
 }
 .section-hero {

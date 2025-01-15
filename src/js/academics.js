@@ -76,3 +76,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		lastScrollY = currentScrollY;
 	});
 });
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+document.addEventListener('DOMContentLoaded', () => {
+	const pictures = document.querySelectorAll(
+		'.gallery__carousel-picture-inner picture'
+	);
+	const btnNext = document.querySelector('.button-carousel-right');
+	const btnPrev = document.querySelector('.button-carousel-left');
+
+	let currentIndex = 0;
+
+	function updateCarousel(newIndex) {
+		pictures[currentIndex].classList.remove('active');
+		currentIndex = (newIndex + pictures.length) % pictures.length; // Циклічне оновлення індекса
+		pictures[currentIndex].classList.add('active');
+	}
+
+	btnNext.addEventListener('click', () => updateCarousel(currentIndex + 1));
+	btnPrev.addEventListener('click', () => updateCarousel(currentIndex - 1));
+});

@@ -12,7 +12,8 @@
 .footer {
 	max-width: 1920px;
 	margin: 0 auto;
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	gap: remm(30);
 	border-radius: remm(12);
 	border: var(--border-gray-15);
@@ -161,4 +162,3 @@
 		text-align: center;
 	}
 }
-
