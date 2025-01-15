@@ -1,4 +1,5 @@
 @use 'helpers' as *;
+
 :root {
 	--absolute-white: #fff;
 	--absolute-black: #000;
@@ -12,6 +13,7 @@
 	--orange-97: #fff5f0;
 	--orange-99: #fffcfa;
 
+	--grey-00: #1e1e1e;
 	--grey-10: #1a1a1a;
 	--grey-15: #262626;
 	--grey-20: #333;
@@ -24,9 +26,10 @@
 	--font-family: 'Outfit', sans-serif;
 	--second-family: 'Raleway', sans-serif;
 
-	--shadow-big-box: #{remm(8)} #{remm(8)} 0 #{remm(1)} var(--grey-10);
-	--shadow-main: #{remm(6)} #{remm(6)} 0 #{remm(2)} var(--grey-10);
-	--shadow-button: #{remm(4)} #{remm(4)} 0 #{remm(2)} var(--grey-10);
+	--shadow-big-box: #{remm(8)} #{remm(8)} 0 #{remm(1)} var(--grey-00);
+	--shadow-main: #{remm(6)} #{remm(6)} 0 #{remm(2)} var(--grey-00);
+	--shadow-main-etc: #{remm(6)} #{remm(6)} 0 #{remm(1)} var(--grey-00);
+	--shadow-button: #{remm(4)} #{remm(4)} 0 #{remm(2)} var(--grey-00);
 
 	--border-gray-15: #{remm(2)} solid var(--grey-15);
 	--border-gray-20: #{remm(2)} solid var(--grey-20);
@@ -36,10 +39,19 @@
 
 	--100vw: calc(100vw - var(--scrollbar-width));
 
-	--container-width: #{remm(1590)};
+	--container-width: #{fluid(1600, 380)};
 	--container-padding-x: #{remm(16)};
 
-	@include laptop {
-		--container-width: #{remm(1280)};
+	@include mobile-above-l {
+		--container-padding-x: #{remm(36)};
+	}
+	@include tablet-above {
+		--container-padding-x: #{remm(60)};
+	}
+	@include laptop-above {
+		--container-padding-x: #{remm(80)};
+	}
+	@include desktop {
+		--container-padding-x: #{remm(162)};
 	}
 }

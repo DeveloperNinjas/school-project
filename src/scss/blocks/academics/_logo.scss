@@ -1,21 +1,18 @@
-.logo {
-	color: black;
+@use '../../helpers' as *;
 
-	&.__yellow {
-		color: yellow;
-		font-size: 23px;
-	}
-	&.__green @include mobile {
-		padding: 20 20 20 20;
+.logo {
+	&__image {
+		max-width: fluid(183, 137);
 	}
 }
 
-.wraper {
-	&__item {
-		gap: 20px;
-		color: green;
-		&-red {
-			color: red;
-		}
+.header__logo {
+	align-items: center;
+	background: var(--orange-65);
+	padding: remm(18) remm(20);
+	@include desktop {
+		padding: remm(20) remm(24);
 	}
+	border-right: var(--border-gray-15);
+	border-radius: remm(10) 0 0 remm(10);
 }

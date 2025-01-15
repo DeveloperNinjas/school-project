@@ -4,10 +4,17 @@
 @use 'utils';
 @use 'variables';
 
+html {
+	&.is-lock {
+		overflow: hidden;
+	}
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	background: var(--orange-97);
+	font-family: var(--font-family);
 	@include fluid-text(20, 16);
 }
 
@@ -118,4 +125,18 @@ button {
 	outline: remm(2) dashed var(--grey-30);
 	outline-offset: remm(4);
 	transition-duration: 0s !important;
+}
+
+a,
+button {
+	&[aria-label] {
+		position: relative;
+
+		&::before {
+			@include abs-center;
+			@include square(remm(44));
+
+			content: '';
+		}
+	}
 }
