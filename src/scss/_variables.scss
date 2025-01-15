@@ -41,6 +41,7 @@
 
 	--container-width: #{fluid(1600, 380)};
 	--container-padding-x: #{remm(16)};
+
 	@include mobile-above-l {
 		--container-padding-x: #{remm(36)};
 	}
