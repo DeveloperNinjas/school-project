@@ -95,9 +95,6 @@
 		border: var(--border-gray-15);
 		border-radius: remm(10);
 
-		// position: absolute;
-		// top: -250px;
-		// left: -135px;
 		@include desktop {
 			border-radius: remm(12);
 		}

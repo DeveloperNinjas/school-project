@@ -14,3 +14,7 @@
 @use 'blocks/academics/learn';
 @use 'blocks/academics/gallery';
 @use 'blocks/academics/footer';
+
+body {
+	user-select: none;
+}

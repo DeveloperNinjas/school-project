@@ -64,6 +64,7 @@
 	}
 
 	&__menu {
+		overflow: auto;
 		&-list {
 			display: flex;
 			flex-direction: column;
