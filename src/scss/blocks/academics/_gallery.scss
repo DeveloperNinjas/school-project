@@ -18,7 +18,7 @@
 			@include hover {
 				border: remm(2) solid var(--orange-65);
 				color: var(--orange-65);
-				box-shadow: 1px 1px 6px 6px var(--orange-65);
+				box-shadow: var(--shadow-hover);
 			}
 		}
 	}
@@ -32,11 +32,11 @@
 	&__carousel {
 		&-box {
 			z-index: -1;
-			margin-top: -80px;
+			margin-top: remm(-80);
 			gap: fluid(40, 20);
 
 			padding: fluid(41, 34) fluid(50, 30) fluid(50, 30) fluid(50, 30);
-			padding-top: 100px;
+			padding-top: remm(100);
 		}
 
 		&-picture-inner {
