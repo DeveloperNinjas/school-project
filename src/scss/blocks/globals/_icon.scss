@@ -194,6 +194,7 @@
 			translate: -50% -50%;
 		}
 	}
+
 	&--vertical {
 		&::before {
 			content: '';
@@ -204,12 +205,12 @@
 			left: 51%;
 			translate: -50% 0;
 			z-index: -1;
-			box-shadow: remm(-2) remm(-70) remm(0) remm(6) var(--orange-80);
+			box-shadow: remm(-2) remm(-80) remm(0) remm(6) var(--orange-80);
 			animation: moveShadow 2s linear infinite;
 
 			@keyframes moveShadow {
 				0% {
-					box-shadow: remm(-2) remm(-70) remm(0) remm(6) var(--orange-80);
+					box-shadow: remm(-2) remm(-80) remm(0) remm(6) var(--orange-80);
 				}
 				50% {
 					box-shadow: remm(-2) remm(0) remm(0) remm(6) var(--orange-80);

@@ -1,12 +1,12 @@
 @use 'global';
 @use 'helpers' as *;
 
-@use 'blocks/academics/bordered-shadow-box';
-@use 'blocks/academics/tittle_inner';
-@use 'blocks/academics/burger-button';
-@use 'blocks/academics/logo';
-@use 'blocks/academics/key';
-@use 'blocks/academics/icon';
+@use 'blocks/globals/bordered-shadow-box';
+@use 'blocks/globals/tittle_inner';
+@use 'blocks/globals/burger-button';
+@use 'blocks/globals/logo';
+@use 'blocks/globals/key';
+@use 'blocks/globals/icon';
 
 @use 'blocks/academics/header';
 @use 'blocks/academics/hero';
