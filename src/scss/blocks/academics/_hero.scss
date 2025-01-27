@@ -6,7 +6,7 @@
 	}
 }
 .section-hero {
-	max-width: 1920px;
+	max-width: remm(1920);
 	margin-inline: auto;
 	padding-inline: remm(16);
 	@include tablet-above {

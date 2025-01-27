@@ -10,4 +10,11 @@
 	background-color: var(--absolute-white);
 	box-shadow: var(--shadow-main);
 	position: relative;
+
+	&__list {
+		box-shadow: var(--shadow-list-box);
+		@include desktop {
+			box-shadow: var(--shadow-main);
+		}
+	}
 }

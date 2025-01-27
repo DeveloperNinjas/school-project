@@ -1,12 +1,19 @@
 @use 'global';
 @use 'helpers' as *;
 
-h1 {
-	color: var(--orange-65);
-}
-.wraper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: remm(15);
+@use 'blocks/academics/bordered-shadow-box';
+@use 'blocks/academics/tittle_inner';
+@use 'blocks/academics/burger-button';
+@use 'blocks/academics/logo';
+@use 'blocks/academics/key';
+@use 'blocks/academics/icon';
+
+@use 'blocks/academics/header';
+@use 'blocks/academics/hero';
+@use 'blocks/admission/admission-process.scss';
+@use 'blocks/admission/fee.scss';
+@use 'blocks/academics/footer';
+
+body {
+	user-select: none;
 }

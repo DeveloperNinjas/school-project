@@ -39,6 +39,7 @@
 			background-size: remm(125) remm(384);
 		}
 	}
+
 	&--svg {
 		&-header {
 			position: absolute;
@@ -147,8 +148,8 @@
 			background-color: var(--orange-97);
 			box-sizing: content-box;
 			position: absolute;
-			top: -30px;
-			left: 20px;
+			top: remm(-30);
+			left: remm(20);
 			opacity: 0;
 			transition: opacity 2s ease;
 
@@ -175,6 +176,57 @@
 				@include desktop {
 					width: remm(24);
 				}
+			}
+		}
+	}
+
+	&--circle {
+		&::before {
+			content: '';
+			display: inline-block;
+			width: remm(36);
+			height: remm(36);
+			background: url('/images/admission/svg/icon-black-circle.svg') no-repeat
+				center / contain;
+			position: absolute;
+			top: 104%;
+			left: 50%;
+			translate: -50% -50%;
+		}
+	}
+	&--vertical {
+		&::before {
+			content: '';
+			border-right: var(--border-gray-15);
+			height: remm(80);
+			position: absolute;
+			top: 100%;
+			left: 51%;
+			translate: -50% 0;
+			z-index: -1;
+			box-shadow: remm(-2) remm(-70) remm(0) remm(6) var(--orange-80);
+			animation: moveShadow 2s linear infinite;
+
+			@keyframes moveShadow {
+				0% {
+					box-shadow: remm(-2) remm(-70) remm(0) remm(6) var(--orange-80);
+				}
+				50% {
+					box-shadow: remm(-2) remm(0) remm(0) remm(6) var(--orange-80);
+				}
+				100% {
+					box-shadow: remm(-2) remm(70) remm(0) remm(6) var(--orange-80);
+				}
+			}
+
+			@include mobile-above-l {
+				top: 105%;
+			}
+			@include tablet-above {
+				top: 110%;
+			}
+			@include laptop-above {
+				top: 115%;
 			}
 		}
 	}
