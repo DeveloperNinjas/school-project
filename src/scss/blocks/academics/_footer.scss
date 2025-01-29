@@ -69,6 +69,7 @@
 			align-items: center;
 			text-decoration: none;
 			color: var(--gray-15);
+			cursor: pointer;
 
 			@include hover {
 				color: var(--absolute-black);
@@ -151,9 +152,9 @@
 			background-color: var(--orange-90);
 
 			@include hover {
-				background-color: transparent;
+				background-color: var(--absolute-white);
 				border-color: var(--orange-65);
-				box-shadow: var(--shadow-hover)
+				box-shadow: var(--shadow-hover);
 			}
 		}
 	}
