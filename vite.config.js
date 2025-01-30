@@ -16,6 +16,9 @@ export default defineConfig({
 			},
 		},
 	},
+	define: {
+		global: 'window',
+	},
 	css: {
 		devSourcemap: true,
 		preprocessorOptions: {

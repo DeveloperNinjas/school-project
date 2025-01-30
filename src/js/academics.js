@@ -41,18 +41,8 @@ class Header {
 new Header();
 
 document.addEventListener('DOMContentLoaded', () => {
-	const svgs = document.querySelectorAll('.icon--svg-header');
-
-	svgs.forEach(svg => {
-		svg.classList.add('animate');
-	});
-});
-
-document.addEventListener('DOMContentLoaded', () => {
 	const header = document.querySelector('.header');
-	const icons = document.querySelectorAll('.icon--svg-special');
 	let lastScrollY = window.scrollY;
-	let animatedIcons = new Set();
 
 	window.addEventListener('scroll', () => {
 		const currentScrollY = window.scrollY;
@@ -63,6 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
 			header.classList.remove('hidden');
 		}
 
+		lastScrollY = currentScrollY;
+	});
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	const svgs = document.querySelectorAll('.icon--svg-header');
+
+	svgs.forEach(svg => {
+		svg.classList.add('animate');
+	});
+	const icons = document.querySelectorAll('.icon--svg-special');
+	let animatedIcons = new Set();
+
+	window.addEventListener('scroll', () => {
 		icons.forEach((icon, index) => {
 			if (animatedIcons.has(index)) return;
 
@@ -72,28 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {
 				animatedIcons.add(index);
 			}
 		});
-
-		lastScrollY = currentScrollY;
 	});
-});
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-document.addEventListener('DOMContentLoaded', () => {
-	const pictures = document.querySelectorAll(
-		'.gallery__carousel-picture-inner picture'
-	);
-	const btnNext = document.querySelector('.button-carousel-right');
-	const btnPrev = document.querySelector('.button-carousel-left');
-
-	let currentIndex = 0;
-
-	function updateCarousel(newIndex) {
-		pictures[currentIndex].classList.remove('active');
-		currentIndex = (newIndex + pictures.length) % pictures.length; // Циклічне оновлення індекса
-		pictures[currentIndex].classList.add('active');
-	}
-
-	btnNext.addEventListener('click', () => updateCarousel(currentIndex + 1));
-	btnPrev.addEventListener('click', () => updateCarousel(currentIndex - 1));
 });
