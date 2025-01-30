@@ -1,0 +1,30 @@
+@use '../../helpers' as *;
+
+.mission{
+    &__inner-card-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__card-item {
+            justify-content: start;
+            align-items: start;
+            gap: remm(16);
+            padding: fluid(80, 50) fluid(50, 35) fluid(50, 35) fluid(50, 30);
+            height: 100%;
+    
+            @include desktop {
+                gap: remm(20);
+            }
+        }
+
+    &__card-list{
+        display: flex;
+        flex-direction: column;
+        gap: fluid(30, 60);
+        @include tablet-above {
+                flex-direction: row;
+            }
+    }
+    }

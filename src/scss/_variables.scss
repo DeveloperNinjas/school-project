@@ -13,26 +13,26 @@
 	--orange-97: #fff5f0;
 	--orange-99: #fffcfa;
 
-	--grey-00: #1e1e1e;
-	--grey-10: #1a1a1a;
-	--grey-15: #262626;
-	--grey-20: #333;
-	--grey-30: #4c4c4d;
-	--grey-35: #59595a;
-	--grey-40: #656567;
-	--grey-60: #98989a;
-	--grey-70: #b3b3b3;
+	--gray-00: #1e1e1e;
+	--gray-10: #1a1a1a;
+	--gray-15: #262626;
+	--gray-20: #333;
+	--gray-30: #4c4c4d;
+	--gray-35: #59595a;
+	--gray-40: #656567;
+	--gray-60: #98989a;
+	--gray-70: #b3b3b3;
 
 	--font-family: 'Outfit', sans-serif;
 	--second-family: 'Raleway', sans-serif;
 
-	--shadow-big-box: #{remm(8)} #{remm(8)} 0 #{remm(1)} var(--grey-00);
-	--shadow-main: #{remm(6)} #{remm(6)} 0 #{remm(2)} var(--grey-00);
-	--shadow-main-etc: #{remm(6)} #{remm(6)} 0 #{remm(1)} var(--grey-00);
-	--shadow-button: #{remm(4)} #{remm(4)} 0 #{remm(2)} var(--grey-00);
+	--shadow-big-box: #{remm(8)} #{remm(8)} 0 #{remm(1)} var(--gray-00);
+	--shadow-main: #{remm(6)} #{remm(6)} 0 #{remm(2)} var(--gray-00);
+	--shadow-main-etc: #{remm(6)} #{remm(6)} 0 #{remm(1)} var(--gray-00);
+	--shadow-button: #{remm(4)} #{remm(4)} 0 #{remm(2)} var(--gray-00);
 
-	--border-gray-15: #{remm(2)} solid var(--grey-15);
-	--border-gray-20: #{remm(2)} solid var(--grey-20);
+	--border-gray-15: #{remm(2)} solid var(--gray-15);
+	--border-gray-20: #{remm(2)} solid var(--gray-20);
 	--border-black: #{remm(2)} solid var(--absolute-black);
 
 	--transition-duration: 0.2s;

@@ -1,12 +1,19 @@
 @use 'global';
 @use 'helpers' as *;
 
-h1 {
-	color: var(--orange-65);
-}
-.wraper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: remm(15);
-}
+@use './blocks/about/shadow-box';
+@use './blocks/about/title-inside';
+// @use './blocks/about/menuBtn';
+// @use './blocks/about/logo';
+@use './blocks/about/key';
+@use './blocks/about/inners';
+@use './blocks/about/icon';
+
+@use './blocks/about/navigation';
+@use './blocks/about/hero';
+@use './blocks/about/mission';
+@use './blocks/about/avards';
+@use './blocks/about/history';
+@use './blocks/about/ourTeam';
+@use './blocks/about/footer';
+
