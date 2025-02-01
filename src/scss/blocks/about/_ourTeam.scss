@@ -10,15 +10,17 @@
 			gap: remm(40);
 		}
 	}
+	&__container-title {
+		margin: 0;
+	}
 
-	// &__team-list-item{
-
-	// }
 	&__team-main-box {
+		justify-content: start;
 		padding: fluid(50, 28);
 		width: 100%;
 		height: 100%;
 	}
+
 	&__title-team-name {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 800;
@@ -33,6 +35,7 @@
 		justify-content: space-between;
 		margin-bottom: remm(24);
 		width: 100%;
+		gap: fluid(20, 10);
 		@include desktop {
 			margin-bottom: remm(30);
 		}
@@ -45,7 +48,7 @@
 
 	&__team-svg {
 		padding: remm(14);
-		border: 2px solid var(--grey-15);
+		border: 2px solid var(--gray-15);
 		border-radius: remm(6);
 		background-color: var(--orange-90);
 		@include tablet-above {
@@ -55,7 +58,7 @@
 	}
 	&__team-text-box {
 		padding: fluid(30, 20);
-		border: 2px solid var(--grey-15);
+		border: 2px solid var(--gray-15);
 		border-radius: remm(10);
 		background-color: var(--orange-97);
 		@include desktop {

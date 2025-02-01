@@ -1,13 +1,10 @@
 @use '../../helpers' as *;
-@use '../../helpers' as *;
 
 .section-footer {
-	padding-inline: remm(16);
-	padding-bottom: remm(20);
+	padding-bottom: fluid(50, 20);
 
 	@include tablet-above {
 		padding-inline: remm(50);
-		padding-bottom: remm(50);
 	}
 }
 .footer {

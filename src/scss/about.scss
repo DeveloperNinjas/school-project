@@ -3,8 +3,8 @@
 
 @use './blocks/about/shadow-box';
 @use './blocks/about/title-inside';
-// @use './blocks/about/menuBtn';
-// @use './blocks/about/logo';
+@use './blocks/about/menuBtn';
+@use './blocks/about/logo';
 @use './blocks/about/key';
 @use './blocks/about/inners';
 @use './blocks/about/icon';
@@ -16,4 +16,3 @@
 @use './blocks/about/history';
 @use './blocks/about/ourTeam';
 @use './blocks/about/footer';
-

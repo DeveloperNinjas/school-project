@@ -14,7 +14,27 @@
 			left: 41%;
 			box-shadow: 0 1px 0 5px var(--orange-80);
 			z-index: -3;
+			@include laptop-above {
+				height: fluid(300, 220);
+			}
 		}
+	}
+
+	&__year-list-item {
+		position: relative;
+		margin-bottom: fluid(100, 50);
+		@include laptop-above {
+			display: flex;
+			flex-direction: row;
+			gap: fluid(50, 40);
+		}
+	}
+	&__year-list-item:last-child {
+		margin-bottom: 0;
+	}
+
+	&__container-title {
+		margin: 0;
 	}
 	&__circle {
 		content: '';
@@ -52,6 +72,9 @@
 				left: fluid(4, 8);
 				box-shadow: 0 1px 0 5px var(--orange-80);
 				z-index: -3;
+				@include laptop-above {
+					height: fluid(800, 700);
+				}
 			}
 		}
 		&-second {
@@ -116,12 +139,5 @@
 	&__time-line-title {
 		text-align: start;
 		margin-bottom: fluid(20, 12);
-	}
-	&__year-list-item {
-		position: relative;
-		margin-bottom: fluid(100, 50);
-	}
-	&__year-list-item:last-child {
-		margin-bottom: 0;
 	}
 }
