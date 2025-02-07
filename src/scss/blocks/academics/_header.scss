@@ -84,7 +84,6 @@
 		}
 		&-item {
 			@include tablet-above {
-				padding: fluid(25.5, 21) fluid(34, 28);
 				border-left: var(--border-gray-15);
 				&:last-child {
 					background-color: var(--orange-65);
@@ -96,6 +95,7 @@
 			}
 		}
 		&-link {
+			padding: fluid(25.5, 21) fluid(34, 28);
 			white-space: nowrap;
 		}
 	}
